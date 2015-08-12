@@ -1,22 +1,21 @@
 //
-//  ViewController.h
+//  LandscapeViewController.h
 //  Calc
 //
-//  Created by leihe on 12/02/2015.
+//  Created by leihe on 25/02/2015.
 //  Copyright (c) 2015 leihe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "Brain.h"
 #import "InfoView.h"
-#import "LandscapeViewController.h"
 
-@interface ViewController : UIViewController
+@interface LandscapeViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *display;
 @property (strong, nonatomic) IBOutlet UILabel *radianSwitchText;
-@property (weak, nonatomic) IBOutlet UILabel *degRadText;
 @property (weak, nonatomic) IBOutlet UIButton *sineButton;
+@property (weak, nonatomic) IBOutlet UILabel *degRadText;
 @property (weak, nonatomic) IBOutlet UIButton *cosButton;
 @property (weak, nonatomic) IBOutlet UIButton *tanButton;
 @property (weak, nonatomic) IBOutlet UIButton *squareButton;
@@ -42,5 +41,5 @@
 -(IBAction)switchPressed:(id)sender;
 -(IBAction)secondButtonPressed:(id)sender;
 -(IBAction)secondButtonReleased:(id)sender;
-@end
 
+@end
